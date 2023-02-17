@@ -2,34 +2,31 @@
 #include <stdlib.h>
 /**
  * main - prints all possible different combinations of two digits.
+ *
  * Return: Always 0
+ *
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int ones = '0';
+	int tens = '0';
 
-	while (d < 10)
+	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
 	{
-		c = 0;
-		while (c < 10)
+		for (ones = '0'; ones <= '9'; ones++)/*print ones digit*/
 		{
-			if (d != c && d < c)
+			if (!((ones == tens) || (tens > ones)))/*eliminates repitition*/
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
+				putchar(tens);
+				putchar(ones);
+				if (!(ones == '9' && tens == '8'))/*addes comma and space*/
 				{
 					putchar(',');
-					putchar('.');
-					putchar(' ');
+					putchar(' '),
 				}
 			}
-			c++;
 		}
-		d++;
 	}
-	putchar('\n')'
+	putchar('\n');
 	return (0);
 }
