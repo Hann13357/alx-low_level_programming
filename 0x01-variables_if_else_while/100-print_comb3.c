@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main - prints all possible different combinations of two digits.
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -14,7 +14,6 @@ int main(void)
 		c = 0;
 		while (c < 10)
 		{
-
 			if (d != c && d < c)
 			{
 				putchar('0' + d);
@@ -23,6 +22,7 @@ int main(void)
 				if (c + d != 17)
 				{
 					putchar(',');
+					putchar('.');
 					putchar(' ');
 				}
 			}
