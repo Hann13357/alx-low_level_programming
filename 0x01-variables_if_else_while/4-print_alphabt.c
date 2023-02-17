@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Print alphabet in lower case
- * followed by a new line, except q and e
- * Retrun: always 0
+ * main - Print all aphabet except q and e.
+ *
+ * Description: 'the program description'
+ *
+ * Return: Always 0
  */
 int main(void)
 {
@@ -11,8 +13,12 @@ int main(void)
 
 	for (la = 'a'; la <= 'z'; la++)
 	{
-		if (la != 'e' && la != 'q')
-			putchar(la);
+		putchar(la);
+	}
+		if (la == 'e' || la == 'q')
+	{
+
+		putchar(la);
 	}
 
 	putchar('\n');
