@@ -3,9 +3,9 @@
 /**
  * print_times_table - prints times table
  * @n: times table to use
- * Return: int.
+ * Return:void
  */
-int Print_times_table(int n)
+void Print_times_table(int n)
 {
 	int a = 0, rep, b;
 
