@@ -2,7 +2,7 @@ i#include "main.h"
 
 /**
  * times_table - print times table
- * Return: void
+ * Return:void
  */
 void times_table(void)
 {
