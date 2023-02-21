@@ -5,7 +5,7 @@
  * @n: times table to use
  * Return: void
  */
-void Print_times_table(int n)
+void Print_times_table(void)
 {
 	int a = 0, rep, b;
 
